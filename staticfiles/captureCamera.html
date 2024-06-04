@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Camera Capture</title>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.4/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.4/control_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.4/drawing_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4/face_mesh.js"></script>
+</head>
+<body>
+    <h1>Capture Face</h1>
+    <p id="instruction">Please tilt your head to the left.</p>
+    <video id="video" autoplay playsinline></video>
+    <script>
+        const video = document.getElementById('video');
+        let isLeftTilted = false;
+        let isRightTilted = false;
+        let instruction = document.getElementById('instruction');
+
+        async function sendFrame(frame) {
+            const response = await fetch("{% url 'camera_capture' %}", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                    "X-CSRFToken": "{{ csrf_token }}"
+                },
+                body: `frame=${encodeURIComponent(frame)}`
+            });
+            const data = await response.json();
+            return data;
+        }
+
+        async function processFrame() {
+            const canvas = document.createElement('canvas');
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            const context = canvas.getContext('2d');
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            const frame = canvas.toDataURL('image/jpeg');
+
+            const data = await sendFrame(frame);
+            if (data.left_tilt && !isLeftTilted) {
+                isLeftTilted = true;
+                instruction.innerText = "Please tilt your head to the right.";
+            } else if (data.right_tilt && !isRightTilted && isLeftTilted) {
+                isRightTilted = true;
+                window.location.href = "{% url 'capture_face' name %}";
+            } else if (isLeftTilted && isRightTilted) {
+                window.location.href = "{% url 'capture_face' name %}";
+            }
+        }
+
+        function startCamera() {
+            navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
+                video.srcObject = stream;
+                video.addEventListener('play', () => {
+                    setInterval(processFrame, 1000);
+                });
+            });
+        }
+
+        startCamera();
+    </script>
+</body>
+</html>

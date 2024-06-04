@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture Face</title>
+</head>
+<body>
+    <h1>Capture Face</h1>
+    <p>Welcome, {{ name }}!</p>
+    <p>Please position your face properly within the camera frame.</p>
+
+    <!-- Video stream container -->
+    <div id="video-container">
+        <video id="video" autoplay></video>
+    </div>
+
+    <!-- Form for capturing and submitting the image -->
+    <form id="capture-form" method="POST">
+        {% csrf_token %}
+        <label for="pin-code">Enter Event PIN:</label>
+    <input type="text" id="pin-code" name="pin_code">
+        <input type="hidden" id="image-data" name="image" value="">
+        <button type="submit">Capture</button>
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get access to the user's camera and start the video stream
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function(stream) {
+                    var video = document.getElementById('video');
+                    video.srcObject = stream;
+                })
+                .catch(function(err) {
+                    console.error('Error accessing user media:', err);
+                });
+
+            // Capture button click event handler
+            document.getElementById('capture-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent default form submission
+
+                // Get the video element and create a canvas
+                var video = document.getElementById('video');
+                var canvas = document.createElement('canvas');
+                var context = canvas.getContext('2d');
+
+                // Set the canvas dimensions to match the video dimensions
+                canvas.width = video.videoWidth;
+                canvas.height = video.videoHeight;
+
+                // Draw the current frame from the video onto the canvas
+                context.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+                // Convert the canvas content to a data URL representing the captured frame
+                var dataURL = canvas.toDataURL('image/jpeg');
+
+                // Set the captured image data to the hidden input field value
+                document.getElementById('image-data').value = dataURL;
+
+                // Submit the form
+                this.submit();
+            });
+        });
+    </script>
+</body>
+</html>

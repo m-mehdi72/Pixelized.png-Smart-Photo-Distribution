@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matched Images</title>
+</head>
+<body>
+    <h1>Matched Images</h1>
+    <p>Displaying matched images for PIN code: {{ pin_code }}</p>
+    
+    <!-- Display matched images -->
+    {% for image in matched_images %}
+        <img src="{{ image.url }}" alt="Matched Image">
+    {% endfor %}
+</body>
+</html>

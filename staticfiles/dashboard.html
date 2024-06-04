@@ -1,0 +1,311 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{% static '/_next/static/css/313720a6781f9254.css' %}" data-precedence="next" />
+  <link rel="stylesheet" href="{% static '/_next/static/css/60cd18a9e452d3a5.css' %}" data-precedence="next" />
+  <link rel="stylesheet" href="{% static '/_next/static/css/43fa7dda09ffc696.css' %}" data-precedence="next" />
+  <link rel="preload" as="script" fetchPriority="low" href="{% static '/_next/static/chunks/webpack-2002111cf9c4140d.js' %}" />
+  <script src="{% static '/_next/static/chunks/fd9d1056-dd156a5c08775a22.js' %}" async=""></script>
+  <script src="{% static '/_next/static/chunks/23-4a12152eb478dd8a.js' %}" async=""></script>
+  <script src="{% static '/_next/static/chunks/main-app-5eccfd84fc46c362.js' %}" async=""></script>
+  <script src="{% static '/_next/static/chunks/344-0b5f05df7af0de1f.js' %}" async=""></script>
+  <script src="{% static '/_next/static/chunks/648-a93cd577c2b33e85.js' %}" async=""></script>
+  <script src="{% static '/_next/static/chunks/231-73bccc6ab6e7d01e.js' %}" async=""></script>
+  <script src="{% static '/_next/static/chunks/764-b50f2e866774e98a.js' %}" async=""></script>
+  <script src="{% static '/_next/static/chunks/260-13d322495cff2a9d.js' %}" async=""></script>
+  <script src="{% static '/_next/static/chunks/app/dashboard/page-35cdc19a99d466db.js' %}" async=""></script>
+  <script src="{% static '/_next/static/chunks/app/layout-6285fdf339084bae.js' %}" async=""></script>
+  <link rel="shortcut icon" href="{% static '/favicon.svg' %}" />
+  <title>Pixelied.png</title>
+  <meta name="description" content="-Photo Sharing App" />
+  <script data-mantine-script="true">try {
+      var _colorScheme = window.localStorage.getItem("mantine-color-scheme-value");
+      var colorScheme = _colorScheme === "light" || _colorScheme === "dark" || _colorScheme === "auto" ? _colorScheme : "light";
+      var computedColorScheme = colorScheme !== "auto" ? colorScheme : window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-mantine-color-scheme", computedColorScheme);
+    } catch (e) { }
+  </script>
+  <script src="{% static '/_next/static/chunks/polyfills-78c92fac7aa8fdd8.js' %}" noModule=""></script>
+</head>
+
+
+<body>
+  <style data-mantine-styles="true">
+    :root {
+      --mantine-font-family: '__defaultFont_bdd031', '__defaultFont_Fallback_bdd031';
+      --mantine-font-family-monospace: '__defaultFont_bdd031', '__defaultFont_Fallback_bdd031';
+      --mantine-font-family-headings: '__defaultFont_bdd031', '__defaultFont_Fallback_bdd031';
+      --mantine-primary-color-filled: var(--mantine-color-green-filled);
+      --mantine-primary-color-filled-hover: var(--mantine-color-green-filled-hover);
+      --mantine-primary-color-light: var(--mantine-color-green-light);
+      --mantine-primary-color-light-hover: var(--mantine-color-green-light-hover);
+      --mantine-primary-color-light-color: var(--mantine-color-green-light-color);
+      --mantine-breakpoint-xs: 20em;
+      --mantine-breakpoint-sm: 30em;
+      --mantine-breakpoint-md: 48em;
+      --mantine-breakpoint-lg: 67.5em;
+      --mantine-breakpoint-xl: 90em;
+      --mantine-primary-color-0: var(--mantine-color-green-0);
+      --mantine-primary-color-1: var(--mantine-color-green-1);
+      --mantine-primary-color-2: var(--mantine-color-green-2);
+      --mantine-primary-color-3: var(--mantine-color-green-3);
+      --mantine-primary-color-4: var(--mantine-color-green-4);
+      --mantine-primary-color-5: var(--mantine-color-green-5);
+      --mantine-primary-color-6: var(--mantine-color-green-6);
+      --mantine-primary-color-7: var(--mantine-color-green-7);
+      --mantine-primary-color-8: var(--mantine-color-green-8);
+      --mantine-primary-color-9: var(--mantine-color-green-9);
+      --mantine-color-blue-0: #0052FF;
+      --mantine-color-blue-1: #1A66FF;
+      --mantine-color-blue-2: #337AFF;
+      --mantine-color-blue-3: #4D8EFF;
+      --mantine-color-blue-4: #66A2FF;
+      --mantine-color-blue-5: #80B6FF;
+      --mantine-color-blue-6: #99CAFF;
+      --mantine-color-blue-7: #B3DEFF;
+      --mantine-color-blue-8: #CCF2FF;
+      --mantine-color-blue-9: #E6F6FF;
+      --mantine-color-black-0: #1D1D1D;
+      --mantine-color-black-1: #333333;
+      --mantine-color-black-2: #3C3C3C;
+      --mantine-color-black-3: #121229;
+      --mantine-color-black-4: #1D1D33;
+      --mantine-color-black-5: #1D331D;
+      --mantine-color-black-6: #331D1D;
+      --mantine-color-black-7: #331D12;
+      --mantine-color-black-8: #121D33;
+      --mantine-color-black-9: #1D3312;
+      --mantine-color-black-10: #331212;
+    }
+
+    :root[data-mantine-color-scheme="dark"] {
+      --mantine-color-anchor: var(--mantine-color-green-4);
+      --mantine-color-blue-light: rgba(153, 202, 255, 0.15);
+      --mantine-color-blue-light-hover: rgba(153, 202, 255, 0.2);
+      --mantine-color-blue-outline-hover: rgba(102, 162, 255, 0.05);
+      --mantine-color-black-text: var(--mantine-color-black-4);
+      --mantine-color-black-filled: var(--mantine-color-black-8);
+      --mantine-color-black-filled-hover: var(--mantine-color-black-9);
+      --mantine-color-black-light: rgba(51, 29, 29, 0.15);
+      --mantine-color-black-light-hover: rgba(51, 29, 29, 0.2);
+      --mantine-color-black-light-color: var(--mantine-color-black-3);
+      --mantine-color-black-outline: var(--mantine-color-black-4);
+      --mantine-color-black-outline-hover: rgba(29, 29, 51, 0.05);
+    }
+
+    :root[data-mantine-color-scheme="light"] {
+      --mantine-color-anchor: var(--mantine-color-green-6);
+      --mantine-color-blue-light: rgba(153, 202, 255, 0.1);
+      --mantine-color-blue-light-hover: rgba(153, 202, 255, 0.12);
+      --mantine-color-blue-outline-hover: rgba(153, 202, 255, 0.05);
+      --mantine-color-black-text: var(--mantine-color-black-filled);
+      --mantine-color-black-filled: var(--mantine-color-black-6);
+      --mantine-color-black-filled-hover: var(--mantine-color-black-7);
+      --mantine-color-black-light: rgba(51, 29, 29, 0.1);
+      --mantine-color-black-light-hover: rgba(51, 29, 29, 0.12);
+      --mantine-color-black-light-color: var(--mantine-color-black-6);
+      --mantine-color-black-outline: var(--mantine-color-black-6);
+      --mantine-color-black-outline-hover: rgba(51, 29, 29, 0.05);
+    }
+  </style>
+  <style data-mantine-styles="classes">
+    @media (max-width: 19.99375em) {
+      .mantine-visible-from-xs {
+        display: none !important;
+      }
+    }
+
+    @media (min-width: 20em) {
+      .mantine-hidden-from-xs {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 29.99375em) {
+      .mantine-visible-from-sm {
+        display: none !important;
+      }
+    }
+
+    @media (min-width: 30em) {
+      .mantine-hidden-from-sm {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 47.99375em) {
+      .mantine-visible-from-md {
+        display: none !important;
+      }
+    }
+
+    @media (min-width: 48em) {
+      .mantine-hidden-from-md {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 67.49375em) {
+      .mantine-visible-from-lg {
+        display: none !important;
+      }
+    }
+
+    @media (min-width: 67.5em) {
+      .mantine-hidden-from-lg {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 89.99375em) {
+      .mantine-visible-from-xl {
+        display: none !important;
+      }
+    }
+
+    @media (min-width: 90em) {
+      .mantine-hidden-from-xl {
+        display: none !important;
+      }
+    }
+  </style>
+  <div class="  text-white  ">
+    <div style="flex:1" class="">
+      <div>
+        <div class="  bg-white md:bg-transparent">
+          <div style="--container-size:calc(83.75rem * var(--mantine-scale))"
+            class="  flex justify-between bg-transparent items-center m-7485cace mantine-Container-root">
+            <div class="logo">
+              <h1
+                class="text-[#0F172A] roboto-font cursor-pointer rounded-[50px] font-bold   text-[15px] leading-[22.5px]">
+                Pixelized.png</h1>
+            </div>
+            <div class="navbar hidden md:block">
+              <ul class="list-none flex gap-2">
+                <li
+                  class="text-[#0F172A] roboto-font cursor-pointer rounded-[50px] font-bold   text-[15px] leading-[22.5px] hover:text-white  hover:bg-[#FE3676] transition-all"
+                  style="padding:4px 24px 4px 24px">Home</li>
+                <li
+                  class="text-[#0F172A] roboto-font cursor-pointer rounded-[50px] font-bold   text-[15px] leading-[22.5px] hover:text-white  hover:bg-[#FE3676] transition-all"
+                  style="padding:4px 24px 4px 24px">About</li>
+                <li
+                  class="text-[#0F172A] roboto-font cursor-pointer rounded-[50px] font-bold   text-[15px] leading-[22.5px] hover:text-white  hover:bg-[#FE3676] transition-all"
+                  style="padding:4px 24px 4px 24px">Contact</li>
+                <li
+                  class="text-[#0F172A] roboto-font cursor-pointer rounded-[50px] font-bold   text-[15px] leading-[22.5px] hover:text-white  hover:bg-[#FE3676] transition-all"
+                  style="padding:4px 24px 4px 24px">Pricing</li>
+              </ul>
+            </div>
+            <div class="block md:hidden"><img alt="mute" loading="lazy" width="20" height="20" decoding="async"
+                data-nimg="1" style="color:transparent" src="{% static '/images/burger.svg' %}" /></div>
+            <div class=" hidden gap-[30px] items-center md:flex   "><button
+                style="--button-radius:calc(0.3125rem * var(--mantine-scale));--button-color:var(--mantine-color-white);border:1px solid #7B808D;background:transparent;color:#818798"
+                class="mantine-focus-auto mantine-active m-77c9d27d mantine-Button-root m-87cf2631 mantine-UnstyledButton-root"
+                type="button"><span class="m-a25b86ee mantine-Button-loader" aria-hidden="true"><span
+                    style="--loader-size:calc(var(--button-height) / 1.8);--loader-color:var(--button-color)"
+                    class="m-b34414df m-5ae2e3c mantine-Loader-root"></span></span><span
+                  class="m-80f1301b mantine-Button-inner"><span class="m-811560b9 mantine-Button-label">See
+                    Pricing</span></span></button><button
+                style="--button-radius:calc(0.3125rem * var(--mantine-scale));--button-bg:#44622C;--button-hover:rgba(61, 88, 40, 1);--button-color:var(--mantine-color-white);--button-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent"
+                class="mantine-focus-auto mantine-active m-77c9d27d mantine-Button-root m-87cf2631 mantine-UnstyledButton-root"
+                type="button"><span class="m-a25b86ee mantine-Button-loader" aria-hidden="true"><span
+                    style="--loader-size:calc(var(--button-height) / 1.8);--loader-color:var(--button-color)"
+                    class="m-b34414df m-5ae2e3c mantine-Loader-root"></span></span><span
+                  class="m-80f1301b mantine-Button-inner"><span class="m-811560b9 mantine-Button-label">Try For
+                    Free</span></span></button></div>
+          </div>
+        </div>
+        <div class="  bg-white md:bg-transparent">
+          <div style="--container-size:calc(83.75rem * var(--mantine-scale))"
+            class="  pt-[50px] bg-transparent  m-7485cace mantine-Container-root">
+            <div class="flex justify-between items-center">
+              <h2 class="roboto-font font-bold text-[#44622C] text-[40px]">Dashboard</h2><button
+                style="--button-radius:calc(0.875rem * var(--mantine-scale));--button-bg:#44622C;--button-hover:rgba(61, 88, 40, 1);--button-color:var(--mantine-color-white);--button-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent"
+                class="mantine-focus-auto mantine-active m-77c9d27d mantine-Button-root m-87cf2631 mantine-UnstyledButton-root"
+                type="button"><span class="m-a25b86ee mantine-Button-loader" aria-hidden="true"><span
+                    style="--loader-size:calc(var(--button-height) / 1.8);--loader-color:var(--button-color)"
+                    class="m-b34414df m-5ae2e3c mantine-Loader-root"></span></span><span
+                  class="m-80f1301b mantine-Button-inner"><span class="m-811560b9 mantine-Button-label">Create
+                    Event</span></span></button>
+            </div>
+            <div class="  flex gap-3 items-center">
+              <p class="roboto-font m-0 font-normal text-[20px] text-greenText">My Events</p>
+              <div class="search">
+                <div class="m-46b77525 mantine-InputWrapper-root mantine-TextInput-root">
+                  <div
+                    style="--input-radius:calc(0.5rem * var(--mantine-scale));--input-left-section-pointer-events:none"
+                    class="m-6c018570 mantine-Input-wrapper mantine-TextInput-wrapper" data-variant="default"
+                    data-with-left-section="true">
+                    <div data-position="left" class="m-82577fc2 mantine-Input-section mantine-TextInput-section"><img
+                        alt="" loading="lazy" width="18" height="18" decoding="async" data-nimg="1"
+                        style="color:transparent" src="{% static '/images/Vector (1).svg' %}" /></div><input
+                      class="m-8fb7ebe7 mantine-Input-input mantine-TextInput-input" data-variant="default"
+                      placeholder="Search Events" aria-invalid="false" id="mantine-R5bafnlnja" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul>
+              {% for event in events %}
+              <li>
+              
+            <div class="pt-4 flex items-center gap-[30px] flex-wrap"><a href="{% url 'event_details' username=username event_id=event.id %}" style="text-decoration:none"
+                >
+                <div class="cardEvent rounded-[43px] max-w-[295px] w-full min-h-[310px] bg-[#d9eec7]"><img alt="img"
+                    loading="lazy" width="1000" height="196" decoding="async" data-nimg="1" class="max-w-full"
+                    style="color:transparent" src="{% static '/images/Pixabay-3046269.svg' %}" />
+                  <div class="px-[30px] bg-[] flex justify-between items-center">
+                    <div>
+                      <p class="text-greenText roboto-font font-normal text-[20px]">{{ event.name }} - {{ event.created_at }}</p>
+                    </div>
+                    <div aria-haspopup="menu" aria-expanded="false" aria-controls="mantine-R2jrafnlnja-dropdown"
+                      id="mantine-R2jrafnlnja-target" class=""><img alt="" loading="lazy" width="9" height="33"
+                        decoding="async" data-nimg="1" class="cursor-pointer" style="color:transparent"
+                        src="{% static '/images/Vector (2).svg' %}" /></div>
+                  </div>
+                </div>
+              </a>
+              </li>
+              {% empty %}
+            <li>No events registered yet.</li>
+                {% endfor %}
+              </ul>
+              </a>
+              <div id = "showFormButton"
+                class="cardEvent cursor-pointer text-greenText font-normal roboto-font text-[31px] add flex justify-center items-center rounded-[43px] max-w-[295px] w-full min-h-[310px] bg-[#d9eec7]">
+                +</div>
+                <div id="eventFormContainer" style = "display:show">
+                  <form method="post" id="eventForm">
+                      {% csrf_token %}
+                      {{ form.name }}
+                      <button type="submit">Create Event</button>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- <section class="m-fd1ab0aa m-54c44539 mantine-Modal-content m-1b7284a3 mantine-Paper-root" role="dialog" tabindex="-1" aria-modal="true" aria-describedby="mantine-o1lq91yfz-body" style="--paper-radius: calc(1.25rem * var(--mantine-scale)); transition-property: transform, opacity; transition-duration: 200ms; transition-timing-function: ease; transform-origin: center center; opacity: 1; transform: scale(1);"><header class="m-b5489c3c m-d0e2b9cd mantine-Modal-header"><button class="mantine-focus-auto mantine-active m-220c80f2 m-606cb269 mantine-Modal-close m-86a44da5 mantine-CloseButton-root m-87cf2631 mantine-UnstyledButton-root" data-variant="subtle" type="button"><svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: var(--cb-icon-size, 70%); height: var(--cb-icon-size, 70%);"><path d="M11.7816 4.03157C12.0062 3.80702 12.0062 3.44295 11.7816 3.2184C11.5571 2.99385 11.193 2.99385 10.9685 3.2184L7.50005 6.68682L4.03164 3.2184C3.80708 2.99385 3.44301 2.99385 3.21846 3.2184C2.99391 3.44295 2.99391 3.80702 3.21846 4.03157L6.68688 7.49999L3.21846 10.9684C2.99391 11.193 2.99391 11.557 3.21846 11.7816C3.44301 12.0061 3.80708 12.0061 4.03164 11.7816L7.50005 8.31316L10.9685 11.7816C11.193 12.0061 11.5571 12.0061 11.7816 11.7816C12.0062 11.557 12.0062 11.193 11.7816 10.9684L8.31322 7.49999L11.7816 4.03157Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button></header><div class="m-5df29311 mantine-Modal-body" id="mantine-o1lq91yfz-body"><div class=" px-[20px]"><h1 class="font-medium text-[40px] mt-0 text-greenText">Create Event</h1><div class="mt-3"><div class="m-46b77525 mantine-InputWrapper-root mantine-TextInput-root"><div class="m-6c018570 mantine-Input-wrapper mantine-TextInput-wrapper" data-variant="default" style="--input-radius: var(--mantine-radius-md);"><input class="m-8fb7ebe7 mantine-Input-input mantine-TextInput-input" data-variant="default" placeholder="Event Name" aria-invalid="false" id="mantine-c9qxikdac"></div></div><div class="my-4"><input class="px-2 py-1 placeholder:text-gray-400 text-gray-400 w-full" placeholder="Date" id="" type="date" name="" style="border: 1px solid rgb(206, 212, 218); border-radius: 8px;"></div></div><div class="text-center"><button class="mantine-focus-auto mantine-active m-77c9d27d mantine-Button-root m-87cf2631 mantine-UnstyledButton-root" type="button" style="--button-bg: #44622C; --button-hover: rgba(61, 88, 40, 1); --button-color: var(--mantine-color-white); --button-bd: calc(0.0625rem * var(--mantine-scale)) solid transparent;"><span class="m-a25b86ee mantine-Button-loader" aria-hidden="true"><span class="m-b34414df m-5ae2e3c mantine-Loader-root" style="--loader-size: calc(var(--button-height) / 1.8); --loader-color: var(--button-color);"></span></span><span class="m-80f1301b mantine-Button-inner"><span class="m-811560b9 mantine-Button-label">Create Event</span></span></button></div></div></div></section> -->
+<script>
+  document.getElementById('showFormButton').addEventListener('click', function() {
+      document.getElementById('eventFormContainer').style.display = 'block';
+  });
+</script>
+  <script src="{% static '/_next/static/chunks/webpack-2002111cf9c4140d.js' %}" async=""></script>
+  <!-- <script>(self.__next_f = self.__next_f || []).push([0]); self.__next_f.push([2, null])</script>
+   <script>self.__next_f.push([1, "1:HL[\"/_next/static/css/313720a6781f9254.css\",\"style\"]\n2:HL[\"/_next/static/css/60cd18a9e452d3a5.css\",\"style\"]\n3:HL[\"/_next/static/css/43fa7dda09ffc696.css\",\"style\"]\n"])</script>
+  <script>self.__next_f.push([1, "4:I[5751,[],\"\"]\n6:I[9114,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"648\",\"static/chunks/648-a93cd577c2b33e85.js\",\"231\",\"static/chunks/231-73bccc6ab6e7d01e.js\",\"764\",\"static/chunks/764-b50f2e866774e98a.js\",\"260\",\"static/chunks/260-13d322495cff2a9d.js\",\"702\",\"static/chunks/app/dashboard/page-35cdc19a99d466db.js\"],\"Header\"]\n7:I[9127,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"648\",\"static/chunks/648-a93cd577c2b33e85.js\",\"231\",\"static/chunks/231-73bccc6ab6e7d01e.js\",\"764\",\"static/chunks/764-b50f2e866774e98a.js\",\"260\",\"static/chunks/260-13d322495cff2a9d.js\",\"702\",\"static/chunks/app/dashboard/page-35cdc19a99d466db.js\"],\"DashboardMain\"]\n8:I[9275,[],\"\"]\n9:I[1343,[],\"\"]\na:I[2581,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"185\",\"static/chunks/app/layout-6285fdf339084bae.js\"],\"ColorSchemeScript\"]\nb:I[813,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"185\",\"static/chunks/app/layout-6285fdf339084bae.js\"],\"MantineProvider\"]\nc:I[2242,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"185\",\"static/chunks/app/layout-6285fdf339084bae.js\"],\"theme\"]\nd:I[6246,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"185\",\"static/chunks/app/layout-6285fdf339084bae.js\"],\"Box\"]\nf:I[6130,[],\"\"]\n10:[]\n"])</script>
+  <script>self.__next_f.push([1, "0:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/313720a6781f9254.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"1\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/60cd18a9e452d3a5.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"2\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/43fa7dda09ffc696.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"$L4\",null,{\"buildId\":\"1QM9rfo-xc3oSGXlsZdoL\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/dashboard\",\"initialTree\":[\"\",{\"children\":[\"dashboard\",{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"dashboard\",{\"children\":[\"__PAGE__\",{},[[\"$L5\",[\"$\",\"div\",null,{\"children\":[[\"$\",\"$L6\",null,{}],[\"$\",\"$L7\",null,{}]]}]],null],null]},[\"$\",\"$L8\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"dashboard\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"styles\":null}],null]},[[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"$La\",null,{\"defaultColorScheme\":\"light\"}],[\"$\",\"link\",null,{\"rel\":\"shortcut icon\",\"href\":\"/favicon.svg\"}],[\"$\",\"meta\",null,{\"name\":\"viewport\",\"content\":\"minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no\"}]]}],[\"$\",\"body\",null,{\"children\":[\"$\",\"$Lb\",null,{\"theme\":\"$c\",\"children\":[\"$\",\"$Ld\",null,{\"className\":\"  text-white  \",\"children\":[\"$\",\"$Ld\",null,{\"flex\":\"1\",\"children\":[\"$\",\"$L8\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L9\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[],\"styles\":null}]}]}]}]}]]}],null],null],\"couldBeIntercepted\":false,\"initialHead\":[false,\"$Le\"],\"globalErrorComponent\":\"$f\",\"missingSlots\":\"$W10\"}]]\n"])</script>
+  <script>self.__next_f.push([1, "e:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"Pixelied.png\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"-Photo Sharing App\"}]]\n5:null\n"])</script> --> --> -->
+</body>
+
+</html>

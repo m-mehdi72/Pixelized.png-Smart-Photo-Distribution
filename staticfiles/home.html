@@ -1,0 +1,540 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="{% static '_next/static/css/313720a6781f9254.css' %}" data-precedence="next" />
+  <link rel="stylesheet" href="{% static '_next/static/css/60cd18a9e452d3a5.css' %}" data-precedence="next" />
+  <link rel="stylesheet" href="{% static '_next/static/css/43fa7dda09ffc696.css' %}" data-precedence="next" />
+  <link rel="preload" as="script" fetchPriority="low" href="{% static '_next/static/chunks/webpack-2002111cf9c4140d.js' %}" />
+  <script src="{% static '_next/static/chunks/fd9d1056-dd156a5c08775a22.js' %}" async=""></script>
+  <script src="{% static '_next/static/chunks/23-4a12152eb478dd8a.js' %}" async=""></script>
+  <script src="{% static '_next/static/chunks/main-app-5eccfd84fc46c362.js' %}" async=""></script>
+  <script src="{% static '_next/static/chunks/344-0b5f05df7af0de1f.js' %}" async=""></script>
+  <script src="{% static '_next/static/chunks/648-a93cd577c2b33e85.js' %}" async=""></script>
+  <script src="{% static '_next/static/chunks/231-73bccc6ab6e7d01e.js' %}" async=""></script>
+  <script src="{% static '_next/static/chunks/app/home/page-49a74806215f653d.js' %}" async=""></script>
+  <script src="{% static '_next/static/chunks/app/layout-6285fdf339084bae.js' %}" async=""></script>
+  <link rel="shortcut icon" href="{% static 'favicon.svg' %}" />
+  <title>Pixelied.png</title>
+  <meta name="description" content="-Photo Sharing App" />
+  <script data-mantine-script="true">try {
+      var _colorScheme = window.localStorage.getItem("mantine-color-scheme-value");
+      var colorScheme = _colorScheme === "light" || _colorScheme === "dark" || _colorScheme === "auto" ? _colorScheme : "light";
+      var computedColorScheme = colorScheme !== "auto" ? colorScheme : window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-mantine-color-scheme", computedColorScheme);
+    } catch (e) { }
+  </script>
+  <script src="{% static '_next/static/chunks/polyfills-78c92fac7aa8fdd8.js' %}" noModule=""></script>
+</head>
+
+<body>
+  <style data-mantine-styles="true">
+    :root {
+      --mantine-font-family: '__defaultFont_bdd031', '__defaultFont_Fallback_bdd031';
+      --mantine-font-family-monospace: '__defaultFont_bdd031', '__defaultFont_Fallback_bdd031';
+      --mantine-font-family-headings: '__defaultFont_bdd031', '__defaultFont_Fallback_bdd031';
+      --mantine-primary-color-filled: var(--mantine-color-green-filled);
+      --mantine-primary-color-filled-hover: var(--mantine-color-green-filled-hover);
+      --mantine-primary-color-light: var(--mantine-color-green-light);
+      --mantine-primary-color-light-hover: var(--mantine-color-green-light-hover);
+      --mantine-primary-color-light-color: var(--mantine-color-green-light-color);
+      --mantine-breakpoint-xs: 20em;
+      --mantine-breakpoint-sm: 30em;
+      --mantine-breakpoint-md: 48em;
+      --mantine-breakpoint-lg: 67.5em;
+      --mantine-breakpoint-xl: 90em;
+      --mantine-primary-color-0: var(--mantine-color-green-0);
+      --mantine-primary-color-1: var(--mantine-color-green-1);
+      --mantine-primary-color-2: var(--mantine-color-green-2);
+      --mantine-primary-color-3: var(--mantine-color-green-3);
+      --mantine-primary-color-4: var(--mantine-color-green-4);
+      --mantine-primary-color-5: var(--mantine-color-green-5);
+      --mantine-primary-color-6: var(--mantine-color-green-6);
+      --mantine-primary-color-7: var(--mantine-color-green-7);
+      --mantine-primary-color-8: var(--mantine-color-green-8);
+      --mantine-primary-color-9: var(--mantine-color-green-9);
+      --mantine-color-blue-0: #0052FF;
+      --mantine-color-blue-1: #1A66FF;
+      --mantine-color-blue-2: #337AFF;
+      --mantine-color-blue-3: #4D8EFF;
+      --mantine-color-blue-4: #66A2FF;
+      --mantine-color-blue-5: #80B6FF;
+      --mantine-color-blue-6: #99CAFF;
+      --mantine-color-blue-7: #B3DEFF;
+      --mantine-color-blue-8: #CCF2FF;
+      --mantine-color-blue-9: #E6F6FF;
+      --mantine-color-black-0: #1D1D1D;
+      --mantine-color-black-1: #333333;
+      --mantine-color-black-2: #3C3C3C;
+      --mantine-color-black-3: #121229;
+      --mantine-color-black-4: #1D1D33;
+      --mantine-color-black-5: #1D331D;
+      --mantine-color-black-6: #331D1D;
+      --mantine-color-black-7: #331D12;
+      --mantine-color-black-8: #121D33;
+      --mantine-color-black-9: #1D3312;
+      --mantine-color-black-10: #331212;
+    }
+
+    :root[data-mantine-color-scheme="dark"] {
+      --mantine-color-anchor: var(--mantine-color-green-4);
+      --mantine-color-blue-light: rgba(153, 202, 255, 0.15);
+      --mantine-color-blue-light-hover: rgba(153, 202, 255, 0.2);
+      --mantine-color-blue-outline-hover: rgba(102, 162, 255, 0.05);
+      --mantine-color-black-text: var(--mantine-color-black-4);
+      --mantine-color-black-filled: var(--mantine-color-black-8);
+      --mantine-color-black-filled-hover: var(--mantine-color-black-9);
+      --mantine-color-black-light: rgba(51, 29, 29, 0.15);
+      --mantine-color-black-light-hover: rgba(51, 29, 29, 0.2);
+      --mantine-color-black-light-color: var(--mantine-color-black-3);
+      --mantine-color-black-outline: var(--mantine-color-black-4);
+      --mantine-color-black-outline-hover: rgba(29, 29, 51, 0.05);
+    }
+
+    :root[data-mantine-color-scheme="light"] {
+      --mantine-color-anchor: var(--mantine-color-green-6);
+      --mantine-color-blue-light: rgba(153, 202, 255, 0.1);
+      --mantine-color-blue-light-hover: rgba(153, 202, 255, 0.12);
+      --mantine-color-blue-outline-hover: rgba(153, 202, 255, 0.05);
+      --mantine-color-black-text: var(--mantine-color-black-filled);
+      --mantine-color-black-filled: var(--mantine-color-black-6);
+      --mantine-color-black-filled-hover: var(--mantine-color-black-7);
+      --mantine-color-black-light: rgba(51, 29, 29, 0.1);
+      --mantine-color-black-light-hover: rgba(51, 29, 29, 0.12);
+      --mantine-color-black-light-color: var(--mantine-color-black-6);
+      --mantine-color-black-outline: var(--mantine-color-black-6);
+      --mantine-color-black-outline-hover: rgba(51, 29, 29, 0.05);
+    }
+  </style>
+  <style data-mantine-styles="classes">
+    @media (max-width: 19.99375em) {
+      .mantine-visible-from-xs {
+        display: none !important;
+      }
+    }
+
+    @media (min-width: 20em) {
+      .mantine-hidden-from-xs {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 29.99375em) {
+      .mantine-visible-from-sm {
+        display: none !important;
+      }
+    }
+
+    @media (min-width: 30em) {
+      .mantine-hidden-from-sm {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 47.99375em) {
+      .mantine-visible-from-md {
+        display: none !important;
+      }
+    }
+
+    @media (min-width: 48em) {
+      .mantine-hidden-from-md {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 67.49375em) {
+      .mantine-visible-from-lg {
+        display: none !important;
+      }
+    }
+
+    @media (min-width: 67.5em) {
+      .mantine-hidden-from-lg {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 89.99375em) {
+      .mantine-visible-from-xl {
+        display: none !important;
+      }
+    }
+
+    @media (min-width: 90em) {
+      .mantine-hidden-from-xl {
+        display: none !important;
+      }
+    }
+  </style>
+  <div class="  text-white  ">
+    <div style="flex:1" class="">
+      <div>
+        <div class="  bg-white md:bg-transparent">
+          <div style="--container-size:calc(83.75rem * var(--mantine-scale))"
+            class="  flex justify-between bg-transparent items-center m-7485cace mantine-Container-root">
+            <div class="logo">
+              <h1
+                class="text-[#0F172A] roboto-font cursor-pointer rounded-[50px] font-bold   text-[15px] leading-[22.5px]">
+                Pixelized.png</h1>
+            </div>
+            <div class="navbar hidden md:block">
+              <ul class="list-none flex gap-2">
+                <li
+                  class="text-[#0F172A] roboto-font cursor-pointer rounded-[50px] font-bold   text-[15px] leading-[22.5px] hover:text-white  hover:bg-[#FE3676] transition-all"
+                  style="padding:4px 24px 4px 24px">Home</li>
+                <li
+                  class="text-[#0F172A] roboto-font cursor-pointer rounded-[50px] font-bold   text-[15px] leading-[22.5px] hover:text-white  hover:bg-[#FE3676] transition-all"
+                  style="padding:4px 24px 4px 24px">About</li>
+                <li
+                  class="text-[#0F172A] roboto-font cursor-pointer rounded-[50px] font-bold   text-[15px] leading-[22.5px] hover:text-white  hover:bg-[#FE3676] transition-all"
+                  style="padding:4px 24px 4px 24px">Contact</li>
+                <li
+                  class="text-[#0F172A] roboto-font cursor-pointer rounded-[50px] font-bold   text-[15px] leading-[22.5px] hover:text-white  hover:bg-[#FE3676] transition-all"
+                  style="padding:4px 24px 4px 24px">Pricing</li>
+              </ul>
+            </div>
+            <div class="block md:hidden"><img alt="mute" loading="lazy" width="20" height="20" decoding="async"
+                data-nimg="1" style="color:transparent" src="{% static '/images/burger.svg' %}" /></div>
+            <div class=" hidden gap-[30px] items-center md:flex   "><button
+                style="--button-radius:calc(0.3125rem * var(--mantine-scale));--button-color:var(--mantine-color-white);border:1px solid #7B808D;background:transparent;color:#818798"
+                class="mantine-focus-auto mantine-active m-77c9d27d mantine-Button-root m-87cf2631 mantine-UnstyledButton-root"
+                type="button"><span class="m-a25b86ee mantine-Button-loader" aria-hidden="true"><span
+                    style="--loader-size:calc(var(--button-height) / 1.8);--loader-color:var(--button-color)"
+                    class="m-b34414df m-5ae2e3c mantine-Loader-root"></span></span><span
+                  class="m-80f1301b mantine-Button-inner"><span class="m-811560b9 mantine-Button-label">See
+                    Pricing</span></span></button><button
+                style="--button-radius:calc(0.3125rem * var(--mantine-scale));--button-bg:#44622C;--button-hover:rgba(61, 88, 40, 1);--button-color:var(--mantine-color-white);--button-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent"
+                class="mantine-focus-auto mantine-active m-77c9d27d mantine-Button-root m-87cf2631 mantine-UnstyledButton-root"
+                type="button"><span class="m-a25b86ee mantine-Button-loader" aria-hidden="true"><span
+                    style="--loader-size:calc(var(--button-height) / 1.8);--loader-color:var(--button-color)"
+                    class="m-b34414df m-5ae2e3c mantine-Loader-root"></span></span><span
+                  class="m-80f1301b mantine-Button-inner"><span class="m-811560b9 mantine-Button-label">Try For
+                    Free</span></span></button></div>
+          </div>
+        </div>
+        <div class="">
+          <div style="--container-size:calc(83.75rem * var(--mantine-scale))"
+            class="  flex justify-between bg-transparent py-[40px] items-center m-7485cace mantine-Container-root">
+            <div class="grid grid-cols-12 gap-3  ">
+              <div class="col-span-12 md:col-span-7">
+                <div class="flex flex-col gap-4 md:pt-[120px]">
+                  <div class="title">
+                    <h1 class="text-[#44622C] md:text-[60px] md:leading-[70px] m-0">Accelerate Image Delivery: Swift and
+                      Superior</h1>
+                  </div>
+                  <div class="desc">
+                    <p class="text-[#475569] font-normal roboto-font text-[23px] ">Revolutionize image delivery with
+                      lightning speed and unparalleled quality for an unbeatable user experience</p>
+                  </div><a href = 'accounts/signup'><button
+                      style="--button-height:var(--button-height-md);--button-padding-x:var(--button-padding-x-md);--button-fz:var(--mantine-font-size-md);--button-radius:calc(1.875rem * var(--mantine-scale));--button-bg:#44622C;--button-hover:rgba(61, 88, 40, 1);--button-color:var(--mantine-color-white);--button-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent;width:158px"
+                      class="mantine-focus-auto mantine-active   roboto-font font-medium m-77c9d27d mantine-Button-root m-87cf2631 mantine-UnstyledButton-root"
+                      data-size="md" type="button"><span class="m-a25b86ee mantine-Button-loader"
+                        aria-hidden="true"><span
+                          style="--loader-size:calc(var(--button-height) / 1.8);--loader-color:var(--button-color)"
+                          class="m-b34414df m-5ae2e3c mantine-Loader-root"></span></span><span
+                        class="m-80f1301b mantine-Button-inner"><span class="m-811560b9 mantine-Button-label">Get
+                          Started</span></span></button></a>
+                </div>
+              </div>
+              <div class="col-span-12 md:col-span-5 text-end"><img alt="camera" loading="lazy" width="1000"
+                  height="1000" decoding="async" data-nimg="1" class="max-w-full md:max-w-[509px] h-auto"
+                  style="color:transparent" src="{% static 'images/Img-homesection1.svg' %}" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div style="--container-size:calc(83.75rem * var(--mantine-scale))"
+            class="  flex justify-between bg-transparent py-[40px] items-center m-7485cace mantine-Container-root">
+            <div class="grid grid-cols-12 gap-3 w-full">
+              <div class="col-span-12 md:col-span-6">
+                <div class="image"><img alt="" loading="lazy" width="1000" height="1000" decoding="async" data-nimg="1"
+                    class="max-w-full md:max-w-[544px] h-auto" style="color:transparent"
+                    src="{% static '/images/Pixabay-3143893.svg' %}" /></div>
+              </div>
+              <div class="col-span-12 md:col-span-6">
+                <div>
+                  <h3
+                    class="roboto-font font-medium text-[#44622C] max-w-full md:max-w-[523px] text-[30px] md:text-[40px] m-0 ">
+                    Versatile Excellence for Every Event, Any Scale </h3>
+                  <p
+                    class="text-[#475569] font-normal roboto-font text-[18px] max-w-full md:max-w-[470px] md:pl-[40px] ">
+                    Pixelized.png works anywhere there are photos and people</p>
+                  <div class=" max-w-full flex flex-col gap-5  md:max-w-[489px] ml-auto">
+                    <div class=" ">
+                      <div class="cardd w-full p-4 bg-white shadow-lg rounded-[16px] flex gap-3 items-center"><img
+                          alt="card-img" loading="lazy" width="104" height="107" decoding="async" data-nimg="1"
+                          style="color:transparent" src="{% static '/images/Rectangle 336.svg' %}" />
+                        <div class="flex flex-col gap-2">
+                          <h3 class="text-[18px] underline font-medium roboto-font text-black m-0">Weddings:</h3>
+                          <p class="text-[18px] text-gray-600 font-normal roboto-font m-0">Delight wedding guests by
+                            sharing wedding photos with them</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" ">
+                      <div class="cardd w-full p-4 bg-white shadow-lg rounded-[16px] flex gap-3 items-center"><img
+                          alt="card-img" loading="lazy" width="104" height="107" decoding="async" data-nimg="1"
+                          style="color:transparent" src="{% static '/images/Rectangle 337.svg' %}" />
+                        <div class="flex flex-col gap-2">
+                          <h3 class="text-[18px] underline font-medium roboto-font text-black m-0">Connvocation:</h3>
+                          <p class="text-[18px] text-gray-600 font-normal roboto-font m-0">Share and Sell Convocation
+                            photos to Students and Parents instantly</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" ">
+                      <div class="cardd w-full p-4 bg-white shadow-lg rounded-[16px] flex gap-3 items-center"><img
+                          alt="card-img" loading="lazy" width="104" height="107" decoding="async" data-nimg="1"
+                          style="color:transparent" src="{% static '/images/Rectangle 338.svg' %}" />
+                        <div class="flex flex-col gap-2">
+                          <h3 class="text-[18px] underline font-medium roboto-font text-black m-0">Cooporate Events:
+                          </h3>
+                          <p class="text-[18px] text-gray-600 font-normal roboto-font m-0">From conferences to team
+                            retreats, delight your participants.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-[40px] bg-img">
+          <div style="--container-size:calc(71.25rem * var(--mantine-scale))"
+            class="  flex justify-between bg-transparent  items-center m-7485cace mantine-Container-root">
+            <div class="py-3">
+              <h1 class="text-[#44622C] roboto-font text-center font-semibold text-[45px]  ">Streamlined success at your
+                fingertips effortless, speedy, and sensational</h1>
+              <p class="text-center py-5 font-normal roboto-font text-[26px] text-[#475569] ">World’s fastest &amp;
+                easiest solution for Photo Sharing and Sales</p>
+              <h3 class="roboto-font font-bold text-center text-[30px] text-[#44622C]">How It Works</h3>
+              <div class="flex flex-col gap-5">
+                <div class="flex lg:justify-between items-center flex-wrap justify-center"><img alt="girl"
+                    loading="lazy" width="200" height="199" decoding="async" data-nimg="1" style="color:transparent"
+                    src="{% static '/images/Group 96.svg' %}" />
+                  <div class="flex flex-col">
+                    <h1 class="text-[#44622C]  font-medium roboto-font text-[40px]">Create Event and Invite Guest</h1>
+                    <p class="text-[#475569]  font-normal roboto-font text-[30px] m-0">Create an event ,upload photos
+                      and invite guests</p>
+                  </div>
+                </div>
+                <div class="flex lg:justify-between items-center flex-wrap justify-center"><img alt="girl"
+                    loading="lazy" width="200" height="199" decoding="async" data-nimg="1" style="color:transparent"
+                    src="{% static '/images/Group 96.svg' %}" />
+                  <div class="flex flex-col">
+                    <h1 class="text-[#44622C]  font-medium roboto-font text-[40px]">Create Event and Invite Guest</h1>
+                    <p class="text-[#475569]  font-normal roboto-font text-[30px] m-0">Create an event ,upload photos
+                      and invite guests</p>
+                  </div>
+                </div>
+                <div class="flex lg:justify-between items-center flex-wrap justify-center"><img alt="girl"
+                    loading="lazy" width="200" height="199" decoding="async" data-nimg="1" style="color:transparent"
+                    src="{% static '/images/Group 96.svg' %}" />
+                  <div class="flex flex-col">
+                    <h1 class="text-[#44622C]  font-medium roboto-font text-[40px]">Click Selfie</h1>
+                    <p class="text-[#475569]  font-normal roboto-font text-[30px] m-0">User will enter the basic details
+                      and click a selfie </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div style="--container-size:calc(83.75rem * var(--mantine-scale))"
+            class="    py-[40px] items-center m-7485cace mantine-Container-root">
+            <div class="">
+              <div class="text-center">
+                <h1 class="font-medium text-[40px] text-[#44622C]">Pricing Plans For Pixelized.png </h1>
+              </div>
+              <div class="py-4 cards gap-3 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
+                <div class="card1 rounded-[16px] shadow-md max-w-full md:max-w-[350px] w-full mx-auto ">
+                  <div class="bg-[#edfde1] pt-5 text-center ">
+                    <h3 class="font-semibold roboto-font m-0 leading-1 text-[20px] text-[#44622C]">Bussiness plan</h3>
+                    <h1 class="font-semibold roboto-font m-0 leading-1 text-[36px] text-[#44622C]">$20/mth</h1>
+                    <p class="font-normal roboto-font m-0 leading-1 text-[16px] text-[#44622C]">Billed annually</p>
+                  </div>
+                  <div class="px-[30px] py-[30px] bg-white">
+                    <div class="flex justify-between pb-3">
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">Storage</h1>
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">100gb</h1>
+                    </div>
+                    <div class="flex justify-between pb-3">
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">Events</h1>
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">100gb</h1>
+                    </div>
+                    <div class="flex justify-between pb-3">
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">Face Searches</h1>
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">100</h1>
+                    </div>
+                    <div class="flex justify-between pb-3">
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">Image limit per sub
+                        event</h1>
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">6000</h1>
+                    </div>
+                    <div class="text-center pt-4"><button
+                        style="--button-height:var(--button-height-md);--button-padding-x:var(--button-padding-x-md);--button-fz:var(--mantine-font-size-md);--button-radius:calc(1rem * var(--mantine-scale));--button-bg:#44622C;--button-hover:rgba(61, 88, 40, 1);--button-color:var(--mantine-color-white);--button-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent"
+                        class="mantine-focus-auto mantine-active   roboto-font font-medium m-77c9d27d mantine-Button-root m-87cf2631 mantine-UnstyledButton-root"
+                        data-size="md" type="button"><span class="m-a25b86ee mantine-Button-loader"
+                          aria-hidden="true"><span
+                            style="--loader-size:calc(var(--button-height) / 1.8);--loader-color:var(--button-color)"
+                            class="m-b34414df m-5ae2e3c mantine-Loader-root"></span></span><span
+                          class="m-80f1301b mantine-Button-inner"><span class="m-811560b9 mantine-Button-label">Get
+                            Started</span></span></button></div>
+                  </div>
+                </div>
+                <div class="card1 rounded-[16px] shadow-md max-w-full md:max-w-[350px] w-full mx-auto ">
+                  <div class="bg-[#edfde1] pt-5 text-center ">
+                    <h3 class="font-semibold roboto-font m-0 leading-1 text-[20px] text-[#44622C]">Basic plan</h3>
+                    <h1 class="font-semibold roboto-font m-0 leading-1 text-[36px] text-[#44622C]">$0/mth</h1>
+                    <p class="font-normal roboto-font m-0 leading-1 text-[16px] text-[#44622C]">Billed annually</p>
+                  </div>
+                  <div class="px-[30px] py-[30px] bg-white">
+                    <div class="flex justify-between pb-3">
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">Storage</h1>
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">10gb</h1>
+                    </div>
+                    <div class="flex justify-between pb-3">
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">Events</h1>
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">01</h1>
+                    </div>
+                    <div class="flex justify-between pb-3">
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">Face Searches</h1>
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">10</h1>
+                    </div>
+                    <div class="flex justify-between pb-3">
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">Image limit per sub
+                        event</h1>
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">600</h1>
+                    </div>
+                    <div class="text-center pt-4"><button
+                        style="--button-height:var(--button-height-md);--button-padding-x:var(--button-padding-x-md);--button-fz:var(--mantine-font-size-md);--button-radius:calc(1rem * var(--mantine-scale));--button-bg:#44622C;--button-hover:rgba(61, 88, 40, 1);--button-color:var(--mantine-color-white);--button-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent"
+                        class="mantine-focus-auto mantine-active   roboto-font font-medium m-77c9d27d mantine-Button-root m-87cf2631 mantine-UnstyledButton-root"
+                        data-size="md" type="button"><span class="m-a25b86ee mantine-Button-loader"
+                          aria-hidden="true"><span
+                            style="--loader-size:calc(var(--button-height) / 1.8);--loader-color:var(--button-color)"
+                            class="m-b34414df m-5ae2e3c mantine-Loader-root"></span></span><span
+                          class="m-80f1301b mantine-Button-inner"><span class="m-811560b9 mantine-Button-label">Get
+                            Started</span></span></button></div>
+                  </div>
+                </div>
+                <div class="card1 rounded-[16px] shadow-md max-w-full md:max-w-[350px] w-full mx-auto ">
+                  <div class="bg-[#edfde1] pt-5 text-center ">
+                    <h3 class="font-semibold roboto-font m-0 leading-1 text-[20px] text-[#44622C]">Enterprise plan</h3>
+                    <h1 class="font-semibold roboto-font m-0 leading-1 text-[36px] text-[#44622C]">$40/mth</h1>
+                    <p class="font-normal roboto-font m-0 leading-1 text-[16px] text-[#44622C]">Billed annually</p>
+                  </div>
+                  <div class="px-[30px] py-[30px] bg-white">
+                    <div class="flex justify-between pb-3">
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">Storage</h1>
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">1TB</h1>
+                    </div>
+                    <div class="flex justify-between pb-3">
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">Events</h1>
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">1000</h1>
+                    </div>
+                    <div class="flex justify-between pb-3">
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">Face Searches</h1>
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">1500</h1>
+                    </div>
+                    <div class="flex justify-between pb-3">
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">Image limit per sub
+                        event</h1>
+                      <h1 class="font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]">1000</h1>
+                    </div>
+                    <div class="text-center pt-4"><button
+                        style="--button-height:var(--button-height-md);--button-padding-x:var(--button-padding-x-md);--button-fz:var(--mantine-font-size-md);--button-radius:calc(1rem * var(--mantine-scale));--button-bg:#44622C;--button-hover:rgba(61, 88, 40, 1);--button-color:var(--mantine-color-white);--button-bd:calc(0.0625rem * var(--mantine-scale)) solid transparent"
+                        class="mantine-focus-auto mantine-active   roboto-font font-medium m-77c9d27d mantine-Button-root m-87cf2631 mantine-UnstyledButton-root"
+                        data-size="md" type="button"><span class="m-a25b86ee mantine-Button-loader"
+                          aria-hidden="true"><span
+                            style="--loader-size:calc(var(--button-height) / 1.8);--loader-color:var(--button-color)"
+                            class="m-b34414df m-5ae2e3c mantine-Loader-root"></span></span><span
+                          class="m-80f1301b mantine-Button-inner"><span class="m-811560b9 mantine-Button-label">Get
+                            Started</span></span></button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-[40px] bg-img">
+          <form class="max-w-xl m-auto py-10 mt-10 px-12 border" style="border-color:#44622C">
+            <h1 class="text-2xl font-bold mb-8" style="color:#44622C;font-size:40px;margin-left:160px">Contact Us</h1>
+            <label class="block mb-2 font-bold" style="color:#44622C">Name</label><input type="text"
+              class="w-full p-2 mb-6 border" required=""
+              style="border-color:#44622C;border-radius:10px;border-width:1px" name="name" value="" /><label
+              class="block mb-2 font-bold" style="color:#44622C">Email</label><input type="email"
+              class="w-full p-2 mb-6 border" required=""
+              style="border-color:#44622C;border-radius:10px;border-width:1px" name="email" value="" /><label
+              class="block mb-2 font-bold" style="color:#44622C">Message</label><textarea name="message"
+              class="w-full h-40 p-2 border" required=""
+              style="border-color:#44622C;border-radius:10px;border-width:1px"></textarea><button type="submit"
+              class="w-full p-2 mt-4" style="background-color:#44622C;color:white;border-radius:10px;border:none">Send
+              Message</button>
+          </form>
+        </div>
+        <div class="bg-[#44622C]">
+          <div style="--container-size:calc(83.75rem * var(--mantine-scale))"
+            class="    py-[20px] items-center m-7485cace mantine-Container-root">
+            <div class="grid  gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-[40px]">
+              <div class="">
+                <h2 class="roboto-font text-white font-normal">Pixelized.png</h2>
+                <p class="pt-3 roboto-font text-[#171717] ">Join and start sharing your memories with the world. Sign up
+                  now to create your free account and begin preserving your precious moments for years to come.</p>
+              </div>
+              <div class="">
+                <h2 class="roboto-font text-white font-normal">Our Services</h2>
+                <ul class="list-none pl-0 m-0">
+                  <li class="pt-3 roboto-font cursor-pointer text-[#171717] ">Privacy Policy</li>
+                  <li class="pt-3 roboto-font cursor-pointer text-[#171717] ">Photographers</li>
+                  <li class="pt-3 roboto-font cursor-pointer text-[#171717] ">Customers</li>
+                  <li class="pt-3 roboto-font cursor-pointer text-[#171717] ">Photos</li>
+                </ul>
+              </div>
+              <div class="">
+                <h2 class="roboto-font text-white font-normal">Useful links</h2>
+                <ul class="list-none pl-0 m-0">
+                  <li class="pt-3 roboto-font cursor-pointer text-[#171717] ">About us</li>
+                  <li class="pt-3 roboto-font cursor-pointer text-[#171717] ">Our Team</li>
+                  <li class="pt-3 roboto-font cursor-pointer text-[#171717] ">Privacy Policy</li>
+                  <li class="pt-3 roboto-font cursor-pointer text-[#171717] ">Contact us</li>
+                  <li class="pt-3 roboto-font cursor-pointer text-[#171717] ">Terms of services</li>
+                </ul>
+              </div>
+              <div class="">
+                <h2 class="roboto-font text-white font-normal">Connect With Us: </h2>
+                <div class="flex gap-3 pt-3 flex-wrap"><img alt="/images/Group 67.svg" loading="lazy" width="46"
+                    height="46" decoding="async" data-nimg="1" style="color:transparent"
+                    src="{% static '/images/Group 67.svg' %}" /><img alt="{% static '/images/Group 66.svg' &}" loading="lazy" width="46" height="46"
+                    decoding="async" data-nimg="1" style="color:transparent" src="{% static '/images/Group 66.svg' %}" /><img
+                    alt="{% static '/images/Group 65.svg' %}" loading="lazy" width="46" height="46" decoding="async" data-nimg="1"
+                    style="color:transparent" src="{% static '/images/Group 65.svg' %}" /><img alt="{% static '/images/Group 64.svg' %}"
+                    loading="lazy" width="46" height="46" decoding="async" data-nimg="1" style="color:transparent"
+                    src="{% static '/images/Group 64.svg' %}" /></div>
+              </div>
+            </div>
+            <div class="py-4 text-center " style="border-top:1px solid #2C2C2C">
+              <h3 class="text-white roboto-font font-normal text-[16px]">@copyright 2023 all right reserved</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{% static '/_next/static/chunks/webpack-2002111cf9c4140d.js' %}" async=""></script>
+  <!-- <script>(self.__next_f = self.__next_f || []).push([0]); self.__next_f.push([2, null])</script>
+  <script>self.__next_f.push([1, "1:HL[\"/_next/static/css/313720a6781f9254.css\",\"style\"]\n2:HL[\"/_next/static/css/60cd18a9e452d3a5.css\",\"style\"]\n3:HL[\"/_next/static/css/43fa7dda09ffc696.css\",\"style\"]\n"])</script>
+  <script>self.__next_f.push([1, "4:I[5751,[],\"\"]\n6:I[9114,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"648\",\"static/chunks/648-a93cd577c2b33e85.js\",\"231\",\"static/chunks/231-73bccc6ab6e7d01e.js\",\"951\",\"static/chunks/app/home/page-49a74806215f653d.js\"],\"Header\"]\n7:I[1959,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"648\",\"static/chunks/648-a93cd577c2b33e85.js\",\"231\",\"static/chunks/231-73bccc6ab6e7d01e.js\",\"951\",\"static/chunks/app/home/page-49a74806215f653d.js\"],\"Container\"]\n8:I[231,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"648\",\"static/chunks/648-a93cd577c2b33e85.js\",\"231\",\"static/chunks/231-73bccc6ab6e7d01e.js\",\"951\",\"static/chunks/app/home/page-49a74806215f653d.js\"],\"\"]\n9:I[5254,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"648\",\"static/chunks/648-a93cd577c2b33e85.js\",\"231\",\"static/chunks/231-73bccc6ab6e7d01e.js\",\"951\",\"static/chunks/app/home/page-49a74806215f653d.js\"],\"Button\"]\na:I[8173,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"648\",\"static/chunks/648-a93cd577c2b33e85.js\",\"231\",\"static/chunks/231-73bccc6ab6e7d01e.js\",\"951\",\"static/chunks/app/home/page-49a74806215f653d.js\"],\"Image\"]\nb:I[4413,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"648\",\"static/chunks/648-a93cd577c2b33e85.js\",\"231\",\"static/chunks/231-73bccc6ab6e7d01e.js\",\"951\",\"static/chunks/app/home/page-49a74806215f653d.js\"],\"Contact\"]\nc:I[5933,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"648\",\"static/chunks/648-a93cd577c2b33e85.js\",\"231\",\"static/chunks/231-73bccc6ab6e7d01e.js\",\"951\",\"static/chunks/app/home/page-49a74806215f653d.js\"],\"Footer\"]\nd:I[9275,[],\"\"]\ne:I[1343,[],\"\"]\nf:I[2581,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"185\",\"static/chunks/app/layout-6285fdf339084bae.js\"],\"ColorSchemeScript\"]\n10:I[813,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"185\",\"static/chunks/app/layout-6285fdf339084bae.js\"],\"MantineProvider\"]\n11:I[2242,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"185\",\"static/chunks/app/layout-6285fdf339084bae.js\"],\"theme\"]\n12:I[6246,[\"344\",\"static/chunks/344-0b5f05df7af0de1f.js\",\"185\",\"static/chunks/app/layout-6285fdf339084bae.js\"],\"Box\"]\n1"])</script>
+  <script>self.__next_f.push([1, "4:I[6130,[],\"\"]\n15:[]\n"])</script>
+  <script>self.__next_f.push([1, "0:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/313720a6781f9254.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"1\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/60cd18a9e452d3a5.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"link\",\"2\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/43fa7dda09ffc696.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"$L4\",null,{\"buildId\":\"1QM9rfo-xc3oSGXlsZdoL\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/home\",\"initialTree\":[\"\",{\"children\":[\"home\",{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"home\",{\"children\":[\"__PAGE__\",{},[[\"$L5\",[\"$\",\"div\",null,{\"children\":[[\"$\",\"$L6\",null,{}],[\"$\",\"div\",null,{\"className\":\"\",\"children\":[\"$\",\"$L7\",null,{\"size\":1340,\"className\":\"  flex justify-between bg-transparent py-[40px] items-center\",\"children\":[\"$\",\"div\",null,{\"className\":\"grid grid-cols-12 gap-3  \",\"children\":[[\"$\",\"div\",null,{\"className\":\"col-span-12 md:col-span-7\",\"children\":[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-4 md:pt-[120px]\",\"children\":[[\"$\",\"div\",null,{\"className\":\"title\",\"children\":[\"$\",\"h1\",null,{\"className\":\"text-[#44622C] md:text-[60px] md:leading-[70px] m-0\",\"children\":\"Accelerate Image Delivery: Swift and Superior\"}]}],[\"$\",\"div\",null,{\"className\":\"desc\",\"children\":[\"$\",\"p\",null,{\"className\":\"text-[#475569] font-normal roboto-font text-[23px] \",\"children\":\"Revolutionize image delivery with lightning speed and unparalleled quality for an unbeatable user experience\"}]}],[\"$\",\"$L8\",null,{\"href\":\"/dashboard\",\"children\":[\"$\",\"$L9\",null,{\"radius\":30,\"color\":\"#44622C\",\"size\":\"md\",\"className\":\"  roboto-font font-medium\",\"style\":{\"width\":\"158px\"},\"children\":\"Get Started\"}]}]]}]}],[\"$\",\"div\",null,{\"className\":\"col-span-12 md:col-span-5 text-end\",\"children\":[\"$\",\"$La\",null,{\"src\":\"/images/Img-homesection1.svg\",\"className\":\"max-w-full md:max-w-[509px] h-auto\",\"width\":1000,\"height\":1000,\"alt\":\"camera\"}]}]]}]}]}],[\"$\",\"div\",null,{\"className\":\"\",\"children\":[\"$\",\"$L7\",null,{\"size\":1340,\"className\":\"  flex justify-between bg-transparent py-[40px] items-center\",\"children\":[\"$\",\"div\",null,{\"className\":\"grid grid-cols-12 gap-3 w-full\",\"children\":[[\"$\",\"div\",null,{\"className\":\"col-span-12 md:col-span-6\",\"children\":[\"$\",\"div\",null,{\"className\":\"image\",\"children\":[\"$\",\"$La\",null,{\"src\":\"/images/Pixabay-3143893.svg\",\"className\":\"max-w-full md:max-w-[544px] h-auto\",\"height\":1000,\"width\":1000,\"alt\":\"\"}]}]}],[\"$\",\"div\",null,{\"className\":\"col-span-12 md:col-span-6\",\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"h3\",null,{\"className\":\"roboto-font font-medium text-[#44622C] max-w-full md:max-w-[523px] text-[30px] md:text-[40px] m-0 \",\"children\":\"Versatile Excellence for Every Event, Any Scale  \"}],[\"$\",\"p\",null,{\"className\":\"text-[#475569] font-normal roboto-font text-[18px] max-w-full md:max-w-[470px] md:pl-[40px] \",\"children\":\"Pixelized.png  works anywhere there are photos and people\"}],[\"$\",\"div\",null,{\"className\":\" max-w-full flex flex-col gap-5  md:max-w-[489px] ml-auto\",\"children\":[[\"$\",\"div\",null,{\"className\":\" \",\"children\":[\"$\",\"div\",null,{\"className\":\"cardd w-full p-4 bg-white shadow-lg rounded-[16px] flex gap-3 items-center\",\"children\":[[\"$\",\"$La\",null,{\"src\":\"/images/Rectangle 336.svg\",\"height\":107,\"width\":104,\"alt\":\"card-img\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-2\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-[18px] underline font-medium roboto-font text-black m-0\",\"children\":\"Weddings:\"}],[\"$\",\"p\",null,{\"className\":\"text-[18px] text-gray-600 font-normal roboto-font m-0\",\"children\":\"Delight wedding guests by sharing wedding photos with them\"}]]}]]}]}],[\"$\",\"div\",null,{\"className\":\" \",\"children\":[\"$\",\"div\",null,{\"className\":\"cardd w-full p-4 bg-white shadow-lg rounded-[16px] flex gap-3 items-center\",\"children\":[[\"$\",\"$La\",null,{\"src\":\"/images/Rectangle 337.svg\",\"height\":107,\"width\":104,\"alt\":\"card-img\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-2\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-[18px] underline font-medium roboto-font text-black m-0\",\"children\":\"Connvocation:\"}],[\"$\",\"p\",null,{\"className\":\"text-[18px] text-gray-600 font-normal roboto-font m-0\",\"children\":\"Share and Sell Convocation photos to Students and Parents instantly\"}]]}]]}]}],[\"$\",\"div\",null,{\"className\":\" \",\"children\":[\"$\",\"div\",null,{\"className\":\"cardd w-full p-4 bg-white shadow-lg rounded-[16px] flex gap-3 items-center\",\"children\":[[\"$\",\"$La\",null,{\"src\":\"/images/Rectangle 338.svg\",\"height\":107,\"width\":104,\"alt\":\"card-img\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-2\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-[18px] underline font-medium roboto-font text-black m-0\",\"children\":\"Cooporate Events:\"}],[\"$\",\"p\",null,{\"className\":\"text-[18px] text-gray-600 font-normal roboto-font m-0\",\"children\":\"From conferences to team retreats, delight your participants.\"}]]}]]}]}]]}]]}]}]]}]}]}],[\"$\",\"div\",null,{\"className\":\"py-[40px] bg-img\",\"children\":[\"$\",\"$L7\",null,{\"size\":1140,\"className\":\"  flex justify-between bg-transparent  items-center\",\"children\":[\"$\",\"div\",null,{\"className\":\"py-3\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-[#44622C] roboto-font text-center font-semibold text-[45px]  \",\"children\":\"Streamlined success at your fingertips effortless, speedy, and sensational\"}],[\"$\",\"p\",null,{\"className\":\"text-center py-5 font-normal roboto-font text-[26px] text-[#475569] \",\"children\":\"World’s fastest \u0026 easiest solution for Photo Sharing and Sales\"}],[\"$\",\"h3\",null,{\"className\":\"roboto-font font-bold text-center text-[30px] text-[#44622C]\",\"children\":\"How  It Works\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col gap-5\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex lg:justify-between items-center flex-wrap justify-center\",\"children\":[[\"$\",\"$La\",null,{\"src\":\"/images/Group 96.svg\",\"height\":199,\"width\":200,\"alt\":\"girl\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-[#44622C]  font-medium roboto-font text-[40px]\",\"children\":\"Create Event and Invite Guest\"}],[\"$\",\"p\",null,{\"className\":\"text-[#475569]  font-normal roboto-font text-[30px] m-0\",\"children\":\"Create an event ,upload photos and invite guests\"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"flex lg:justify-between items-center flex-wrap justify-center\",\"children\":[[\"$\",\"$La\",null,{\"src\":\"/images/Group 96.svg\",\"height\":199,\"width\":200,\"alt\":\"girl\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-[#44622C]  font-medium roboto-font text-[40px]\",\"children\":\"Create Event and Invite Guest\"}],[\"$\",\"p\",null,{\"className\":\"text-[#475569]  font-normal roboto-font text-[30px] m-0\",\"children\":\"Create an event ,upload photos and invite guests\"}]]}]]}],[\"$\",\"div\",null,{\"className\":\"flex lg:justify-between items-center flex-wrap justify-center\",\"children\":[[\"$\",\"$La\",null,{\"src\":\"/images/Group 96.svg\",\"height\":199,\"width\":200,\"alt\":\"girl\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-col\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-[#44622C]  font-medium roboto-font text-[40px]\",\"children\":\"Click Selfie\"}],[\"$\",\"p\",null,{\"className\":\"text-[#475569]  font-normal roboto-font text-[30px] m-0\",\"children\":\"User will enter the basic details and click a selfie \"}]]}]]}]]}]]}]}]}],[\"$\",\"div\",null,{\"children\":[\"$\",\"$L7\",null,{\"size\":1340,\"className\":\"    py-[40px] items-center\",\"children\":[\"$\",\"div\",null,{\"className\":\"\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-center\",\"children\":[\"$\",\"h1\",null,{\"className\":\"font-medium text-[40px] text-[#44622C]\",\"children\":\"Pricing Plans For  Pixelized.png \"}]}],[\"$\",\"div\",null,{\"className\":\"py-4 cards gap-3 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1\",\"children\":[[\"$\",\"div\",null,{\"className\":\"card1 rounded-[16px] shadow-md max-w-full md:max-w-[350px] w-full mx-auto \",\"children\":[[\"$\",\"div\",null,{\"className\":\"bg-[#edfde1] pt-5 text-center \",\"children\":[[\"$\",\"h3\",null,{\"className\":\"font-semibold roboto-font m-0 leading-1 text-[20px] text-[#44622C]\",\"children\":\"Bussiness plan\"}],[\"$\",\"h1\",null,{\"className\":\"font-semibold roboto-font m-0 leading-1 text-[36px] text-[#44622C]\",\"children\":\"$$20/mth\"}],[\"$\",\"p\",null,{\"className\":\"font-normal roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"Billed annually\"}]]}],[\"$\",\"div\",null,{\"className\":\"px-[30px] py-[30px] bg-white\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex justify-between pb-3\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"Storage\"}],[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"100gb\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex justify-between pb-3\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"Events\"}],[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"100gb\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex justify-between pb-3\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"Face Searches\"}],[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"100\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex justify-between pb-3\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"Image limit per sub event\"}],[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"6000\"}]]}],[\"$\",\"div\",null,{\"className\":\"text-center pt-4\",\"children\":[\"$\",\"$L9\",null,{\"radius\":16,\"color\":\"#44622C\",\"size\":\"md\",\"className\":\"  roboto-font font-medium\",\"children\":\"Get Started\"}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"card1 rounded-[16px] shadow-md max-w-full md:max-w-[350px] w-full mx-auto \",\"children\":[[\"$\",\"div\",null,{\"className\":\"bg-[#edfde1] pt-5 text-center \",\"children\":[[\"$\",\"h3\",null,{\"className\":\"font-semibold roboto-font m-0 leading-1 text-[20px] text-[#44622C]\",\"children\":\"Basic plan\"}],[\"$\",\"h1\",null,{\"className\":\"font-semibold roboto-font m-0 leading-1 text-[36px] text-[#44622C]\",\"children\":\"$$0/mth\"}],[\"$\",\"p\",null,{\"className\":\"font-normal roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"Billed annually\"}]]}],[\"$\",\"div\",null,{\"className\":\"px-[30px] py-[30px] bg-white\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex justify-between pb-3\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"Storage\"}],[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"10gb\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex justify-between pb-3\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"Events\"}],[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"01\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex justify-between pb-3\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"Face Searches\"}],[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"10\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex justify-between pb-3\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"Image limit per sub event\"}],[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"600\"}]]}],[\"$\",\"div\",null,{\"className\":\"text-center pt-4\",\"children\":[\"$\",\"$L9\",null,{\"radius\":16,\"color\":\"#44622C\",\"size\":\"md\",\"className\":\"  roboto-font font-medium\",\"children\":\"Get Started\"}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"card1 rounded-[16px] shadow-md max-w-full md:max-w-[350px] w-full mx-auto \",\"children\":[[\"$\",\"div\",null,{\"className\":\"bg-[#edfde1] pt-5 text-center \",\"children\":[[\"$\",\"h3\",null,{\"className\":\"font-semibold roboto-font m-0 leading-1 text-[20px] text-[#44622C]\",\"children\":\"Enterprise plan\"}],[\"$\",\"h1\",null,{\"className\":\"font-semibold roboto-font m-0 leading-1 text-[36px] text-[#44622C]\",\"children\":\"$$40/mth\"}],[\"$\",\"p\",null,{\"className\":\"font-normal roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"Billed annually\"}]]}],[\"$\",\"div\",null,{\"className\":\"px-[30px] py-[30px] bg-white\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex justify-between pb-3\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"Storage\"}],[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"1TB\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex justify-between pb-3\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"Events\"}],[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"1000\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex justify-between pb-3\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"Face Searches\"}],[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"1500\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex justify-between pb-3\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"Image limit per sub event\"}],[\"$\",\"h1\",null,{\"className\":\"font-medium roboto-font m-0 leading-1 text-[16px] text-[#44622C]\",\"children\":\"1000\"}]]}],[\"$\",\"div\",null,{\"className\":\"text-center pt-4\",\"children\":[\"$\",\"$L9\",null,{\"radius\":16,\"color\":\"#44622C\",\"size\":\"md\",\"className\":\"  roboto-font font-medium\",\"children\":\"Get Started\"}]}]]}]]}]]}]]}]}]}],[\"$\",\"$Lb\",null,{}],[\"$\",\"$Lc\",null,{}]]}]],null],null]},[\"$\",\"$Ld\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"home\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Le\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"styles\":null}],null]},[[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"$Lf\",null,{\"defaultColorScheme\":\"light\"}],[\"$\",\"link\",null,{\"rel\":\"shortcut icon\",\"href\":\"/favicon.svg\"}],[\"$\",\"meta\",null,{\"name\":\"viewport\",\"content\":\"minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no\"}]]}],[\"$\",\"body\",null,{\"children\":[\"$\",\"$L10\",null,{\"theme\":\"$11\",\"children\":[\"$\",\"$L12\",null,{\"className\":\"  text-white  \",\"children\":[\"$\",\"$L12\",null,{\"flex\":\"1\",\"children\":[\"$\",\"$Ld\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$Le\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[],\"styles\":null}]}]}]}]}]]}],null],null],\"couldBeIntercepted\":false,\"initialHead\":[false,\"$L13\"],\"globalErrorComponent\":\"$14\",\"missingSlots\":\"$W15\"}]]\n"])</script>
+  <script>self.__next_f.push([1, "13:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"Pixelied.png\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"-Photo Sharing App\"}]]\n5:null\n"])</script> -->
+</body>
+
+</html>
